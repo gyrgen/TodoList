@@ -1,12 +1,12 @@
 'use strict';
 
-const taskInput = document.querySelector('taskInput');
-const addButton = document.querySelector('addButton');
-const taskList = document.querySelector('taskList');
+const taskInput = document.getElementById('taskInput');
+const addButton = document.getElementById('addButton');
+const taskList = document.getElementById('taskList');
 
 function addTask() {
 	const taskText = taskInput.value.trim();
-	if (taskText = '') {
+	if (taskText === '') {
 		return
 	};
 	const li = document.createElement('li');
